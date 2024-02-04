@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Fernando-dev</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Fernando Andrés</h1>
+            <h2>Ingeniero de Software - Experto UI/UX</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/fernando.andres.dev/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/Fernand59328407"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/fernando_devvv/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/fernando-andres-soto-gazul/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Fernando Andrés.</span> En mi portafolio destaco mi sólida base en desarrollo web,
+                destacándome como un full stack Java con experiencia en el uso de tecnologías como Spring y la gestión
+                de bases de datos relacionales, especialmente en entornos MySQL.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            24-09-1991
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +56 9 85467687
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            asd-dev@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://miridian-web.netlify.app/
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Valparaiso, Chile
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>desarrollador Full-Stack</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>WEB-DEV</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fab fa-java"></i>
+                            <span>JAVA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>.NET</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Técnicas</h3>
+                    <div class="skill">
+                        <span>JavaScript - React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS - BT5 - Tailwind</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Figma</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Shopify</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3 style="visibility: hidden;">Profesionales</h3>
+                    <div class="skill">
+                        <span>Java - SPRING</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>.NET</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySql - SqlServer</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>GIT - GITHUB</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Office - Tecnologias ADOBE</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>HTML5 - CSS3 - JS</h4>
+                        <span class="casa">YouTube - Udemy</span>
+                        <span class="fecha">2017 - 2020</span>
+                        <p>Desarrollé fuertes habilidades en programación mediante capacitación autodidacta en
+                            plataformas como YouTube y Udemy. Mi enfoque proactivo y dedicación me han permitido
+                            explorar varios lenguajes y frameworks, construyendo así una sólida base en desarrollo de
+                            software.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programación Computacional</h4>
+                        <span class="casa">Universidad AIEP</span>
+                        <span class="fecha">2018 - 2021</span>
+                        <p>Me formé como programador en el Instituto Profesional AIEP y amplié mis habilidades mediante
+                            cursos en YouTube y Udemy. Esta combinación me brinda una sólida base académica y
+                            experiencia práctica en programación.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">INBOX-PHONE</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>con un año de experiencia en diseño y
+                            gestión de sitios web con funciones de comercio electrónico en Inbox-Phone, enfocado en
+                            seguridad y eficiencia de datos. Proactivo y con habilidades técnicas sólidas, busco
+                            contribuir y
+                            aprender en un entorno dinámico de desarrollo</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">BYCORE</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Cultivé habilidades sólidas en programación mientras trabajaba en ByCore, aprovechando tanto
+                            la capacitación autodidacta como las oportunidades de aprendizaje interno. Mi enfoque
+                            proactivo y dedicación me han permitido contribuir a proyectos diversos, consolidando una
+                            base robusta en el desarrollo de software en el entorno profesional de ByCore.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>MIS PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.png" alt="">
+                    <a href="https://bycore.cl/">
+                        <div class="overlay">
+                            <h3>ByCore</h3>
+                            <p>empresa de ventas por mayor</p>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.png" alt="">
+                    <a href="https://inboxphone.cl/">
+                        <div class="overlay">
+                            <h3>Inbox-Phone</h3>
+                            <p>E-commerce</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.png" alt="">
+                    <a href="https://inbox-phone.netlify.app/">
+                        <div class="overlay">
+                            <h3>Inbox-phone App</h3>
+                            <p>App para carcasas de SmartPhones</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.png" alt="">
+                    <a href="https://github.com/aceu890/tesis-peliculas-api">
+                        <div class="overlay">
+                            <h3>ASP.NET + REACT+SqlServer</h3>
+                            <p>App de Peliculas Full-stack</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.png" alt="">
+                    <a href="https://github.com/aceu890/Curso-de-Springboot-Hibernate">
+                        <div class="overlay">
+                            <h3>Spring + MySQL + JWT + Hibernate - API-REST</h3>
+                            <p>CRUD</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.png" alt="">
+                    <div class="overlay">
+                        <h3>Miridian Web</h3>
+                        <p>Mi página Freelancer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a target="_blank" href="https://www.facebook.com/fernando.andres.dev/"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+            <a target="_blank" href="https://twitter.com/Fernand59328407"><i class="fa-brands fa-twitter"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/fernando-andres-soto-gazul/"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a target="_blank" href="https://www.instagram.com/fernando_devvv/"><i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
